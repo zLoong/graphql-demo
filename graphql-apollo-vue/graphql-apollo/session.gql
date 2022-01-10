@@ -1,4 +1,4 @@
-# session.gql  graphql schema
+# session.gql  graphql schema  [定义类型：数据类型、查询接口及返回类型、编辑接口及返回类型]
 
 # 自定义类型
 type Student {

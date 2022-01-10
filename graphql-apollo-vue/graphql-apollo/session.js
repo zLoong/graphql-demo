@@ -1,7 +1,7 @@
 const db = require('./db');
 
 /**
- * 定义查询函数 与schema中的query对应
+ * 定义查询函数 与schema中的query对应, 也就是方法的实现
  * */ 
 
 const Query = {

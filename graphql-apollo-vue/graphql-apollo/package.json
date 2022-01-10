@@ -4,7 +4,7 @@
   "description": "demo地址：https://blog.csdn.net/weixin_41546513/article/details/121876915",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ."
+    "start": "nodemon ."
   },
   "keywords": [],
   "author": "",
