@@ -1,10 +1,10 @@
-#### graphql, fb2012内部打磨使用，2015公开发布，2018交给基金会
+#### graphql, fb2012内部打磨使用，2015公开发布，2018交给基金会;  graphql基本最主要就是 query & mutation + schema & type
 
 # **[工程github地址](https://github.com/zLoong/graphql-demo/tree/main/graphql-apollo-vue)**
 
 # 一：graphql-apollo-vue 是一个apollo-server + vue实现的demo
 
-demo地址：https://blog.csdn.net/weixin_41546513/article/details/121876915
+demo地址：https://blog.csdn.net/weixin_41546513/article/details/121876915 <2021年12月的项目>
 
 服务端采用 apollo-server 实现
 
@@ -13,7 +13,7 @@ demo地址：https://blog.csdn.net/weixin_41546513/article/details/121876915
 数据库采用 notarealdb 模拟
 
 graphql-apollo 启动：
-cd graphql-apollo-vue/graphql-apollo  npm run dev  localhost:8000
+cd graphql-apollo-vue/graphql-apollo  npm run start  localhost:8000
 ```
 query {
   students {
