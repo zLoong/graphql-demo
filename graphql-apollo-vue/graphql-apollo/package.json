@@ -12,6 +12,7 @@
   "dependencies": {
     "apollo-server": "^3.6.0",
     "apollo-server-core": "^3.6.1",
+    "axios": "^0.25.0",
     "graphql": "^16.2.0",
     "notarealdb": "^0.2.2"
   }

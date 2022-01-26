@@ -16,6 +16,6 @@ const app = new ApolloServer({
         ApolloServerPluginLandingPageGraphQLPlayground // 开启测试页面
     ]
 });
-app.listen(8000).then(({url}) => {
+app.listen(8001).then(({url}) => {
     console.log(url);
 })

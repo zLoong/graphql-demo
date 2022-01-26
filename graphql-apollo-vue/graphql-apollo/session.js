@@ -1,3 +1,5 @@
+
+// const axios = require('axios');
 const db = require('./db');
 
 /**
@@ -6,6 +8,16 @@ const db = require('./db');
 
 const Query = {
     students: () => {
+        // 
+        // axios.get('http://news.html5.qq.com/api/articles/2228112625978831170')
+        // .then(function (response) {
+        // console.log(response);
+        // })
+        // .catch(function (error) {
+        // console.log(error);
+        // });
+        // 为给定 ID 的 user 创建请求
+        // console.log('zloong db.fullarticlesvv=', db.fullarticles);
         return db.students.list();
     },
     studentByName: (root, args, context, info) => {
@@ -16,6 +28,9 @@ const Query = {
     },
     classByID: (root, args, context, info) => {
         return db.class.get(args.id);
+    },
+    article: (root, args, context, info) => {
+        return db.fullarticles.list();
     }
 }
 

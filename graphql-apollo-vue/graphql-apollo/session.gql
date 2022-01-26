@@ -17,13 +17,21 @@ type Class {
   description: String
 }
 
+type ArticleStruct {
+  docId: String
+  title: String
+  from: String
+  isDelete: Boolean
+  sJsonContent: String
+}
+
 # 通用的查询方法定义
 type Query {
   students: [Student]
   studentByName(id: String): Student
   classes: [Class]
   classByID(id: ID): Class
-  test: String
+  article(docId: String): ArticleStruct
 }
 
 # 自定义的参数类型 可以做参数校验
