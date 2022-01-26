@@ -2,39 +2,40 @@
 
 # 自定义类型
 type Student {
-    id: ID! #表示必须有的字段
-    name: String
-    age: Int
-    sex: String
-    class: Class #自定义类型中查询方法
+  id: ID! #表示必须有的字段
+  name: String
+  age: Int
+  sex: String
+  class: Class #自定义类型中查询方法
+  dd: String
 }
 
 # 自定义类型
 type Class {
-    id: ID!
-    name: String
-    description: String
+  id: ID!
+  name: String
+  description: String
 }
 
 # 通用的查询方法定义
 type Query {
-    students: [Student]
-    studentByName(id: String): Student
-    classes: [Class]
-    classByID(id: ID): Class
-    test: String
+  students: [Student]
+  studentByName(id: String): Student
+  classes: [Class]
+  classByID(id: ID): Class
+  test: String
 }
 
 # 自定义的参数类型 可以做参数校验
 input InputStudent {
-    name: String
-    age: Int
-    sex: String
-    classID: Int
+  name: String
+  age: Int
+  sex: String
+  classID: Int
 }
 
 # 增删改都在这里
 type Mutation {
-    createStudent(s: InputStudent): String
-    updateStudent(s: InputStudent): [String]
+  createStudent(s: InputStudent): String
+  updateStudent(s: InputStudent): [String]
 }

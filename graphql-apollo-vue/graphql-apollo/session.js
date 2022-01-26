@@ -23,11 +23,11 @@ const Query = {
  * ?
 */
 
-const Student = {
-    class: (root, args, context, info) => {
-        return db.class.get(root.classID);
-    }
-}
+// const Student = {
+//     class: (root, args, context, info) => {
+//         return db.class.get(root.classID);
+//     }
+// }
 
 /**
  * Motation修改 与 schema中的Motation对应
@@ -45,6 +45,6 @@ const Mutation = {
 
 module.exports = {
     Query,
-    Student,
+    // Student,
     Mutation
 };
