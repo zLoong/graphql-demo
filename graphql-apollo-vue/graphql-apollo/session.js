@@ -29,6 +29,13 @@ const Query = {
     classByID: (root, args, context, info) => {
         return db.class.get(args.id);
     },
+    /**
+     * query
+     article(docId: "2228112625978831170") {
+          docId
+          title
+      }
+     */
     article: (root, args, context, info) => {
         return db.fullarticles.list();
     }
