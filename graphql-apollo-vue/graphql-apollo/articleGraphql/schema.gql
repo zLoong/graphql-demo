@@ -1,0 +1,36 @@
+type ContentField {
+  type: String
+  value: String
+}
+
+type Article {
+  docId: ID!
+  from: String
+  fusionId: String
+  title: String
+  time: String
+  contentFields: [ContentField]
+  author: Author
+  postInfo: PostInfo
+}
+
+# 作者信息
+type Author {
+  puin: ID!
+  avatar: String
+  isDv: Boolean
+  dvIcon: String
+  ident: String
+}
+
+# 互动信息
+type PostInfo {
+  commentNum: Int
+  praiseNum: Int
+  praised: Boolean
+}
+
+# 通用的查询方法定义
+type Query {
+  getArticle: Article
+}

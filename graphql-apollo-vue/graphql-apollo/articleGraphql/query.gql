@@ -1,0 +1,14 @@
+query {
+  getArticle {
+    docId
+    from
+    fusionId
+    author {
+      avatar
+    }
+    postInfo {
+      commentNum
+      praised
+    }
+  }
+}
